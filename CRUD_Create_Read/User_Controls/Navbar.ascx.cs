@@ -6,9 +6,9 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 
 /**
- * @author: Tom Tsiliopoulos
- * @date: May 26, 2016
- * @version: 0.0.1 - added SetActivePage method
+ * @author: Matthew Lane
+ * @date: June 16, 2016
+ * @version: 0.0.2 - Updated the SetActivePage
  */
 
 namespace CRUD_Create_Read
@@ -35,6 +35,16 @@ namespace CRUD_Create_Read
                 case "Home Page":
                     home.Attributes.Add("class", "active");
                     break;
+                case "Students":
+                    students.Attributes.Add("class", "active");
+                    break;
+                case "Courses":
+                    courses.Attributes.Add("class", "active");
+                    break;
+                case "Departments":
+                    departments.Attributes.Add("class", "active");
+                    break;
+                    
                 case "Contact":
                     contact.Attributes.Add("class", "active");
                     break;
